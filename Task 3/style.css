@@ -1,0 +1,58 @@
+/* Grid in CSS */
+
+
+/* Task 3 - Grid auto rows or Grind auto columns  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: inherit;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* grid-auto-rows */
+
+.container-1 {
+    display: grid;
+    grid-template-areas: "a a";
+    grid-template-columns: 100px 100px;
+    /* Explicit columns */
+    grid-auto-rows: 50px;
+    /* Implicit rows */
+    border: 1px solid black;
+    gap: 1px;
+    justify-content: center;
+}
+
+.box {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+
+/* grid-auto-columns */
+
+.container-2 {
+    display: grid;
+    grid-template-areas: "a a";
+    grid-template-rows: 100px 100px;
+    /* Explicit rows */
+    grid-auto-columns: 50px;
+    /* Implicit columns */
+    border: 1px solid black;
+    gap: 1px;
+    justify-content: center;
+}
+
+.box2 {
+    background-color: lightblue;
+    padding: 10px;
+}
